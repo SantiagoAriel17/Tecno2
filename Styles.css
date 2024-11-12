@@ -379,3 +379,118 @@ textarea {
     margin-top: 10px;
     width: 100%;
 }
+
+/* Sección pie de pagina */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #111;
+    color: white;
+    padding: 40px;
+    position: relative;
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-section .download-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-section .download-btn:hover {
+    background-color: #218838;
+}
+
+.footer-section .social-media {
+    margin-top: 15px;
+}
+
+.footer-section .social-btn {
+    background-color: #111;
+    border: 2px solid #28a745;
+    color: #28a745;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer-section .social-btn:hover {
+    background-color: #28a745;
+    color: #111;
+}
+
+.scroll-up {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.scroll-up:hover {
+    background-color: #218838;
+}
+
+/* Iconos */
+.footer-section p i,
+.footer-section .social-btn i,
+.scroll-up i {
+    margin-right: 8px;
+}
+
+/* Ajustes de pantalla pequeña */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+    }
+    .scroll-up {
+        bottom: 40px;
+    }
+}
